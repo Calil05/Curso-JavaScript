@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: tomato;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Roboto;
+}
+
+h1{
+    font-family: Roboto;
+}
+
+.lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.lista-cadastro input[type=text]{
+    flex: 3;
+    height: 40px;
+    padding-left: 20px;
+    font-family: Roboto;
+}
+
+.lista-cadastro input[type=number]{
+    padding-left: 20px;
+    flex: 1;
+}
+
+.lista-cadastro input[type=submit]{
+    flex: 0.5;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    border-style: solid;
+}
+
+.lista-produtos-single{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.lista-produtos-single h3{
+    flex: 1;
+    padding: 0 20px;
+    font-family: Roboto;
+}
+
+h3.price-produtos{
+    text-align: right;
+    font-family: Roboto;
+}
+
+.soma-produtos{
+    margin: 20px;
+}
+
+.btn{
+    width: 70px;
+    height: 45px;
+    border-radius: 20px;
+    margin-left: 1%;
+    text-align: center;
+    cursor: pointer;
+    background-color: crimson;
+    font-family: Roboto;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    background-color: rgb(253, 9, 1);
+    border: none;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

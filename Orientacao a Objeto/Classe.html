@@ -1,0 +1,30 @@
+<script>
+
+    class Animal{
+        constructor(nome){
+            this.nome = nome;
+        }
+
+        printNome(){
+            return this.nome;
+        }
+    }
+
+    class Corvo extends Animal{
+        constructor(nome){
+            super(nome);
+            this.raca = "American Raven"
+
+        }
+
+        printRaca(){
+            return this.raca;
+        }
+    }
+
+    corvo = new Corvo("Corvinho");
+
+    alert(corvo.printNome());
+    alert(corvo.printRaca());
+    
+</script>

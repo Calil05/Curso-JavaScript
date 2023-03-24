@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            margin-left: 0;
+        }
+        .animaEsquerda{
+            transition: 1s;
+            margin-left: 90px;
+            margin-top: 210px;
+            background-color: violet;
+        }
+        .animaDenovo{
+            transition: 5s;
+            margin-left: 420px;
+            background-color: yellowgreen;
+            margin-right: 100px;
+            margin-top: 330px;
+            background-color: goldenrod;
+        }
+
+    </style>
+
+    <div class="box"></div>
+    
+    <script>
+
+        var box = document.querySelectorAll('.box')[0];
+        
+        // Automatico, depois de 1 segundo
+
+        setTimeout(()=>{
+            box.classList.add('animaEsquerda');
+            box.classList.add('animaDenovo');
+        },1000);
+
+        // Clicando
+
+        box.addEventListener('click',()=>{
+            box.classList.add('animaEsquerda');
+        });
+
+    </script>
+
+</body>
+</html>

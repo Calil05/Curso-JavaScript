@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .conteudo h2 span{
+            font-size: 13px;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .conteudo p{
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+
+        .mostrar{
+            height: 200px !important;
+        }
+
+    </style>
+
+    <div class="conteudo">
+        <h2>Titulo do Conteudo  <span id="ver">Ver Mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n
+        on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n
+        on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n
+        on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n
+        on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat n
+        on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <script>
+        
+        document.querySelector('.conteudo span').addEventListener('click',()=>{
+            var conteudo = document.querySelectorAll('.conteudo p');
+            var troca = document.getElementById('ver');
+
+
+            if(conteudo[0].classList.contains('mostrar')){
+
+                for(var i=0; i<6; i++){
+                    conteudo[i].classList.remove('mostrar');
+                }
+
+                troca.innerHTML = 'Ver Mais!';
+
+            }else{
+                for(var i=0; i<6; i++){
+                    conteudo[i].classList.add('mostrar');
+                }
+
+                troca.innerHTML = 'Ver Menos!';
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<script>
+
+    function Pessoa(){
+        this.nome = "Calil";
+
+        this.returnAnimal = function(animal){
+            return animal;
+        }
+    }
+
+    function Animal(nome, peso){
+        if(nome == undefined){
+            nome = "Corvo";
+        }
+        if(peso == undefined){
+            peso = "2Kg";
+        }
+
+        this.nome = nome;
+        this.peso = peso;
+    }
+
+    var pessoa = new Pessoa();
+    var animal = new Animal();
+
+    alert(pessoa.returnAnimal(animal.nome));
+
+</script>

@@ -1,0 +1,30 @@
+<script>
+
+    var num1 = prompt("Informe o primeiro numero");
+    var sinal = prompt("Informe o sinal da operação");
+    
+    while(sinal != '+' && sinal != '-' && sinal != "*" && sinal != '/'){
+        alert("Informe um sinal valido");
+        sinal = prompt("Informe o sinal da operação");
+    }
+
+    var num2 = prompt("Informe o segundo numero");
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    var resultado = 0;
+
+    if(sinal == '+'){
+        resultado = num1+num2;
+    }else if(sinal == '-'){
+        resultado = num1-num2;
+    }else if(sinal == '*'){
+        resultado = num1*num2;
+    }else{
+        resultado = num1/num2;
+    }
+
+    alert("O Resultado é: "+resultado);
+
+</script>

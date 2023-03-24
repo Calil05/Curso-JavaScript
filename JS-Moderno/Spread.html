@@ -1,0 +1,27 @@
+<script>
+
+    var nomes = [
+        {
+            nome: 'Kleber'
+        },  
+        {
+            nome: 'Jaime'
+        },
+        {
+            nome: 'Zé do Mato'
+        }
+    ]
+
+    const objetos = [...nomes,{
+        nome: 'Gofaresto'
+    }];
+
+    console.log(objetos);
+
+    function testes(...nomes2){
+        console.log(nomes2);
+    }
+
+    testes([1,2,3,4,5])
+
+</script>

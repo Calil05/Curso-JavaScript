@@ -1,0 +1,39 @@
+<script>
+
+    var pessoas = [{
+                    "nome":"Kleber",
+                    "idade":20,
+                    "profissão":"Programador"
+                  },
+                  {
+                    "nome":"Rogerinho",
+                    "idade":27,
+                    "profissão":"DJ"
+                  },
+                  {
+                    "nome":"Benevenuto",
+                    "idade":58,
+                    "profissão":"Pastor"
+                  },
+                 ];
+
+    var item = prompt("Deseja pesquisar qual item?");
+    item = parseInt(item);
+
+    if(item == 0){
+        alert("Nome: "+pessoas[0].nome);
+        alert("Idade: "+pessoas[0].idade);
+        alert("Profissão: "+pessoas[0].profissão);
+    }else if(item == 1){
+        alert("Nome: "+pessoas[1].nome);
+        alert("Idade: "+pessoas[1].idade);
+        alert("Profissão: "+pessoas[1].profissão);
+    }else if(item == 2){
+        alert("Nome: "+pessoas[2].nome);
+        alert("Idade: "+pessoas[2].idade);
+        alert("Profissão: "+pessoas[2].profissão);
+    }else{
+        alert("Ninguem neste item");
+    };
+
+</script>
